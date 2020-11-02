@@ -52,6 +52,7 @@
 					<Item Name="FreqC.Message Type.ctl" Type="VI" URL="../Instruments/KeySight 53230A/typedefs/FreqC.Message Type.ctl"/>
 					<Item Name="FreqC.Message.ctl" Type="VI" URL="../Instruments/KeySight 53230A/typedefs/FreqC.Message.ctl"/>
 					<Item Name="FreqC.Message Session.ctl" Type="VI" URL="../Instruments/KeySight 53230A/typedefs/FreqC.Message Session.ctl"/>
+					<Item Name="FreqC.Session.ctl" Type="VI" URL="../Instruments/KeySight 53230A/typedefs/FreqC.Session.ctl"/>
 				</Item>
 				<Item Name="Message API" Type="Folder">
 					<Item Name="FreqC.Create Message Session.vi" Type="VI" URL="../Instruments/KeySight 53230A/Message API/FreqC.Create Message Session.vi"/>
@@ -71,7 +72,7 @@
 				<Item Name="Agilent 532XX Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Agilent 532XX Series/Agilent 532XX Series.lvlib"/>
 			</Item>
 			<Item Name="SPD HID Interface" Type="Folder">
-				<Item Name="hidSPDLibForLabView.lvlib" Type="Library" URL="../Instruments/SPD HID Interface/hidSPDLibForLabView.lvlib"/>
+				<Item Name="hidSPDLibForLabView.lvlib" Type="Library" URL="../Instruments/SPD HID Interface/hidSPDLibForLabView/hidSPDLibForLabView.lvlib"/>
 			</Item>
 			<Item Name="KeySight 8164B" Type="Folder">
 				<Item Name="Message API" Type="Folder">
@@ -85,6 +86,13 @@
 			</Item>
 			<Item Name="8164B Lan test.vi" Type="VI" URL="../Instruments/8164B Lan test.vi"/>
 			<Item Name="LeCroy 8404MR VISA Test.vi" Type="VI" URL="../Instruments/LeCroy 8404MR VISA Test.vi"/>
+		</Item>
+		<Item Name="SPD Stand" Type="Folder">
+			<Item Name="SubVIs" Type="Folder"/>
+			<Item Name="typedefs" Type="Folder">
+				<Item Name="SPD.Stand Ctrl.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Ctrl.ctl"/>
+			</Item>
+			<Item Name="SPD.Chech HW status.vi" Type="VI" URL="../SPD Stand/SPD.Chech HW status.vi"/>
 		</Item>
 		<Item Name="SPD Stand Test.vi" Type="VI" URL="../SPD Stand Test.vi"/>
 		<Item Name="SPD Stand Operator UI.vi" Type="VI" URL="../SPD Stand Operator UI.vi"/>
@@ -110,8 +118,7 @@
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
-			<Item Name="FreqC.Session.ctl" Type="VI" URL="../Instruments/KeySight 53230A/typedefs/FreqC.Session.ctl"/>
-			<Item Name="libSPD.dll" Type="Document" URL="../Instruments/SPD HID Interface/hidSPD DLL files/libSPD.dll"/>
+			<Item Name="libSPD.dll" Type="Document" URL="../Instruments/SPD HID Interface/hidSPDLibForLabView/hidSPD DLL files/libSPD.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
