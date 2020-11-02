@@ -32,4 +32,5 @@
 	<Item Name="8164B Read Power.vi" Type="VI" URL="../KeySight 8164B LAN InstrLib/8164B Read Power.vi"/>
 	<Item Name="8164B Set Power SetPoint (1).vi" Type="VI" URL="../KeySight 8164B LAN InstrLib/8164B Set Power SetPoint (1).vi"/>
 	<Item Name="8164B Set Attenuation (3).vi" Type="VI" URL="../KeySight 8164B LAN InstrLib/8164B Set Attenuation (3).vi"/>
+	<Item Name="8164B Chassis Self-test.vi" Type="VI" URL="../KeySight 8164B LAN InstrLib/8164B Chassis Self-test.vi"/>
 </Library>

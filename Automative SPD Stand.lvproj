@@ -67,6 +67,7 @@
 					<Item Name="FreqC.Read Measurement.vi" Type="VI" URL="../Instruments/KeySight 53230A/KeySight 53230A API/FreqC.Read Measurement.vi"/>
 					<Item Name="FreqC.Set Gate.vi" Type="VI" URL="../Instruments/KeySight 53230A/KeySight 53230A API/FreqC.Set Gate.vi"/>
 					<Item Name="FreqC.Set Threshold.vi" Type="VI" URL="../Instruments/KeySight 53230A/KeySight 53230A API/FreqC.Set Threshold.vi"/>
+					<Item Name="FreqC.Self-test.vi" Type="VI" URL="../Instruments/KeySight 53230A/KeySight 53230A API/FreqC.Self-test.vi"/>
 				</Item>
 				<Item Name="KeySight 53230A VISA Test.vi" Type="VI" URL="../Instruments/KeySight 53230A/KeySight 53230A VISA Test.vi"/>
 				<Item Name="Agilent 532XX Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Agilent 532XX Series/Agilent 532XX Series.lvlib"/>
@@ -88,14 +89,24 @@
 			<Item Name="LeCroy 8404MR VISA Test.vi" Type="VI" URL="../Instruments/LeCroy 8404MR VISA Test.vi"/>
 		</Item>
 		<Item Name="SPD Stand" Type="Folder">
-			<Item Name="SubVIs" Type="Folder"/>
+			<Item Name="SubVIs" Type="Folder">
+				<Item Name="Enable Control.vi" Type="VI" URL="../SPD Stand/SubVIs/Enable Control.vi"/>
+			</Item>
 			<Item Name="typedefs" Type="Folder">
 				<Item Name="SPD.Stand Ctrl.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Ctrl.ctl"/>
 			</Item>
+			<Item Name="Equipment Test" Type="Folder">
+				<Item Name="SPD.Connection Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Connection Test.vi"/>
+				<Item Name="SPD.FreqC Self-Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.FreqC Self-Test.vi"/>
+				<Item Name="SPD.8164B Self-Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.8164B Self-Test.vi"/>
+			</Item>
 			<Item Name="SPD.Chech HW status.vi" Type="VI" URL="../SPD Stand/SPD.Chech HW status.vi"/>
+			<Item Name="SPD.Disconnect HW.vi" Type="VI" URL="../SPD Stand/SPD.Disconnect HW.vi"/>
 		</Item>
 		<Item Name="SPD Stand Test.vi" Type="VI" URL="../SPD Stand Test.vi"/>
 		<Item Name="SPD Stand Operator UI.vi" Type="VI" URL="../SPD Stand Operator UI.vi"/>
+		<Item Name="SPD Test Launcher.vi" Type="VI" URL="../SPD Test Launcher.vi"/>
+		<Item Name="SPD.Stand Tabs.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Tabs.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="LeCroy Wave Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/LeCroy Wave Series/LeCroy Wave Series.lvlib"/>
@@ -117,6 +128,7 @@
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 			</Item>
 			<Item Name="libSPD.dll" Type="Document" URL="../Instruments/SPD HID Interface/hidSPDLibForLabView/hidSPD DLL files/libSPD.dll"/>
 		</Item>
