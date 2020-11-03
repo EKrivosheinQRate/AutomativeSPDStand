@@ -85,6 +85,23 @@
 				</Item>
 				<Item Name="KeySight 8164B LAN InstrLib.lvlib" Type="Library" URL="../Instruments/KeySight 8164B/KeySight 8164B LAN InstrLib.lvlib"/>
 			</Item>
+			<Item Name="LeCroy SDA830" Type="Folder">
+				<Item Name="typedefs" Type="Folder">
+					<Item Name="LeCroy.Session.ctl" Type="VI" URL="../Instruments/LeCroy SDA830/typedefs/LeCroy.Session.ctl"/>
+				</Item>
+				<Item Name="LeCroy SDA830 API" Type="Folder">
+					<Item Name="Read" Type="Folder">
+						<Item Name="LeCroy.Read Single Waveform.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/Read/LeCroy.Read Single Waveform.vi"/>
+					</Item>
+					<Item Name="LeCroy.Read.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Read.vi"/>
+					<Item Name="LeCroy.Open Session.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Open Session.vi"/>
+					<Item Name="LeCroy.Close Session.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Close Session.vi"/>
+					<Item Name="LeCroy.Self-Test.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Self-Test.vi"/>
+					<Item Name="LeCroy.Configure Trigger.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Configure Trigger.vi"/>
+					<Item Name="LeCroy.Configure Channel.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Configure Channel.vi"/>
+					<Item Name="LeCroy.Configure Time.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Configure Time.vi"/>
+				</Item>
+			</Item>
 			<Item Name="8164B Lan test.vi" Type="VI" URL="../Instruments/8164B Lan test.vi"/>
 			<Item Name="LeCroy 8404MR VISA Test.vi" Type="VI" URL="../Instruments/LeCroy 8404MR VISA Test.vi"/>
 		</Item>
@@ -95,12 +112,15 @@
 			</Item>
 			<Item Name="typedefs" Type="Folder">
 				<Item Name="SPD.Stand Ctrl.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Ctrl.ctl"/>
+				<Item Name="SPD.Stand Tabs.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Tabs.ctl"/>
 			</Item>
 			<Item Name="Equipment Test" Type="Folder">
 				<Item Name="SPD.Connection Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Connection Test.vi"/>
 				<Item Name="SPD.FreqC Self-Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.FreqC Self-Test.vi"/>
 				<Item Name="SPD.8164B Self-Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.8164B Self-Test.vi"/>
 				<Item Name="SPD.PowerSource Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.PowerSource Test.vi"/>
+				<Item Name="SPD.LeCroy Self-Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.LeCroy Self-Test.vi"/>
+				<Item Name="SPD.KC705 Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.KC705 Test.vi"/>
 			</Item>
 			<Item Name="SPD.Chech HW status.vi" Type="VI" URL="../SPD Stand/SPD.Chech HW status.vi"/>
 			<Item Name="SPD.Disconnect HW.vi" Type="VI" URL="../SPD Stand/SPD.Disconnect HW.vi"/>
@@ -108,7 +128,6 @@
 		<Item Name="SPD Stand Test.vi" Type="VI" URL="../SPD Stand Test.vi"/>
 		<Item Name="SPD Stand Operator UI.vi" Type="VI" URL="../SPD Stand Operator UI.vi"/>
 		<Item Name="SPD Test Launcher.vi" Type="VI" URL="../SPD Test Launcher.vi"/>
-		<Item Name="SPD.Stand Tabs.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Tabs.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="LeCroy Wave Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/LeCroy Wave Series/LeCroy Wave Series.lvlib"/>
@@ -130,8 +149,11 @@
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
+				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
 			</Item>
 			<Item Name="libSPD.dll" Type="Document" URL="../Instruments/SPD HID Interface/hidSPDLibForLabView/hidSPD DLL files/libSPD.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
