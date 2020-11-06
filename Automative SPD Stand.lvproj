@@ -122,6 +122,9 @@
 				<Item Name="SPD.LeCroy Self-Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.LeCroy Self-Test.vi"/>
 				<Item Name="SPD.KC705 Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.KC705 Test.vi"/>
 				<Item Name="SPD.Liser Driver Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Liser Driver Test.vi"/>
+				<Item Name="SPD.Detector Connection Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Detector Connection Test.vi"/>
+				<Item Name="SPD.Read SPD Telemetry.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Read SPD Telemetry.vi"/>
+				<Item Name="SPD.Write SPD Controller Setup.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Write SPD Controller Setup.vi"/>
 			</Item>
 			<Item Name="SPD.Chech HW status.vi" Type="VI" URL="../SPD Stand/SPD.Chech HW status.vi"/>
 			<Item Name="SPD.Disconnect HW.vi" Type="VI" URL="../SPD Stand/SPD.Disconnect HW.vi"/>

@@ -16,11 +16,23 @@
 		<Item Name="hidSPD Read Multi Reports.vi" Type="VI" URL="../LibVIs/hidSPD Read Multi Reports.vi"/>
 	</Item>
 	<Item Name="single SPD API" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Item Name="hidSPD Read Report" Type="Folder">
+			<Item Name="hidSPD Read Telemetry.vi" Type="VI" URL="../LibVIs/hidSPD Read Report/hidSPD Read Telemetry.vi"/>
+			<Item Name="hidSPD Read SPD Name.vi" Type="VI" URL="../LibVIs/hidSPD Read Report/hidSPD Read SPD Name.vi"/>
+		</Item>
+		<Item Name="hidSPD Write Report" Type="Folder">
+			<Item Name="hidSPD Setup Controller.vi" Type="VI" URL="../LibVIs/hidSPD Write Report/hidSPD Setup Controller.vi"/>
+		</Item>
 		<Item Name="hidSPD Close Session.vi" Type="VI" URL="../LibVIs/hidSPD Close Session.vi"/>
 		<Item Name="hidSPD Open Session.vi" Type="VI" URL="../LibVIs/hidSPD Open Session.vi"/>
 		<Item Name="hidSPD Read Report.vi" Type="VI" URL="../LibVIs/hidSPD Read Report.vi"/>
+		<Item Name="hidSPD Write Report.vi" Type="VI" URL="../LibVIs/hidSPD Write Report.vi"/>
+		<Item Name="hidSPD Read Report (poly).vi" Type="VI" URL="../LibVIs/hidSPD Read Report (poly).vi"/>
+		<Item Name="hidSPD Write Report (poly).vi" Type="VI" URL="../LibVIs/hidSPD Write Report (poly).vi"/>
 	</Item>
 	<Item Name="typedefs" Type="Folder">
+		<Item Name="hidSPD Controller Setup Report.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Controller Setup Report.ctl"/>
 		<Item Name="hidSPD Device Session.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Device Session.ctl"/>
 		<Item Name="hidSPD HidDevInfo.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD HidDevInfo.ctl"/>
 		<Item Name="hidSPD Simple Report.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Simple Report.ctl"/>
