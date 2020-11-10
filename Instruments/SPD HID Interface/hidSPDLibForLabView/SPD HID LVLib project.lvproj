@@ -14,6 +14,7 @@
 		<Item Name="spdLib Test.vi" Type="VI" URL="../spdLib Test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 			</Item>
 			<Item Name="libSPD.dll" Type="Document" URL="../hidSPD DLL files/libSPD.dll"/>

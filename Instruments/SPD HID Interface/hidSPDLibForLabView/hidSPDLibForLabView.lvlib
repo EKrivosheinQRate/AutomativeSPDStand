@@ -14,6 +14,7 @@
 		<Item Name="hidSPD Get Ready From Reports.vi" Type="VI" URL="../LibVIs/hidSPD Get Ready From Reports.vi"/>
 		<Item Name="hidSPD Open Multi Sessions.vi" Type="VI" URL="../LibVIs/hidSPD Open Multi Sessions.vi"/>
 		<Item Name="hidSPD Read Multi Reports.vi" Type="VI" URL="../LibVIs/hidSPD Read Multi Reports.vi"/>
+		<Item Name="hidSPD Write Multi Reports.vi" Type="VI" URL="../LibVIs/hidSPD Write Multi Reports.vi"/>
 	</Item>
 	<Item Name="single SPD API" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
