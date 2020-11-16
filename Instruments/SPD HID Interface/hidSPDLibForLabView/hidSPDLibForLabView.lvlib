@@ -34,6 +34,7 @@
 	</Item>
 	<Item Name="typedefs" Type="Folder">
 		<Item Name="hidSPD Controller Setup Report.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Controller Setup Report.ctl"/>
+		<Item Name="hidSPD Controller.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Controller.ctl"/>
 		<Item Name="hidSPD Device Session.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Device Session.ctl"/>
 		<Item Name="hidSPD HidDevInfo.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD HidDevInfo.ctl"/>
 		<Item Name="hidSPD Simple Report.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Simple Report.ctl"/>

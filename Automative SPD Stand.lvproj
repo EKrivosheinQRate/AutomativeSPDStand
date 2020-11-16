@@ -109,10 +109,13 @@
 			<Item Name="SubVIs" Type="Folder">
 				<Item Name="Enable Control.vi" Type="VI" URL="../SPD Stand/SubVIs/Enable Control.vi"/>
 				<Item Name="SPD.Error Handler.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Error Handler.vi"/>
+				<Item Name="Obtain Events.vi" Type="VI" URL="../SPD Stand/SubVIs/Obtain Events.vi"/>
+				<Item Name="Destroy Events.vi" Type="VI" URL="../SPD Stand/SubVIs/Destroy Events.vi"/>
 			</Item>
 			<Item Name="typedefs" Type="Folder">
 				<Item Name="SPD.Stand Ctrl.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Ctrl.ctl"/>
 				<Item Name="SPD.Stand Tabs.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Tabs.ctl"/>
+				<Item Name="SPD.Events.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Events.ctl"/>
 			</Item>
 			<Item Name="Equipment Test" Type="Folder">
 				<Item Name="SPD.Connection Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Connection Test.vi"/>
@@ -125,6 +128,11 @@
 				<Item Name="SPD.Detector Connection Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Detector Connection Test.vi"/>
 				<Item Name="SPD.Read SPD Telemetry.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Read SPD Telemetry.vi"/>
 				<Item Name="SPD.Write SPD Controller Setup.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Write SPD Controller Setup.vi"/>
+			</Item>
+			<Item Name="SPDTests" Type="Folder">
+				<Item Name="SPD.No Pulses Test.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.No Pulses Test.vi"/>
+				<Item Name="SPD.HV_Bias setup.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.HV_Bias setup.vi"/>
+				<Item Name="SPD.Strobe Phase setup.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.Strobe Phase setup.vi"/>
 			</Item>
 			<Item Name="SPD.Chech HW status.vi" Type="VI" URL="../SPD Stand/SPD.Chech HW status.vi"/>
 			<Item Name="SPD.Disconnect HW.vi" Type="VI" URL="../SPD Stand/SPD.Disconnect HW.vi"/>
@@ -155,6 +163,9 @@
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
 				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
+				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 			</Item>
 			<Item Name="libSPD.dll" Type="Document" URL="../Instruments/SPD HID Interface/hidSPDLibForLabView/hidSPD DLL files/libSPD.dll"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
