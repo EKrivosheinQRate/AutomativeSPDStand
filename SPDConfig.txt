@@ -1,0 +1,21 @@
+[Equipment]
+DevBAlias = COM3
+FreqCAlias = KeySight_53230A
+8164BIPAddress = 192.168.1.101
+ScopeAlias = LeCroy
+
+[Test00_NoPulses]
+HV_Bias = 40
+FreqC_GateTime = 1
+
+[Test01_HV_bias]
+FS = 100
+TS = 2
+HV_Bias_Quick_Start = 70
+HV_Bias_Quick_Stop = 85
+HV_Bias_Quick_Step = 2,5
+FreqC_Quick_GateTime = 0,1
+HV_Bias_Precise_Step = 0,05
+FreqC_Precise_GateTime = 0,5
+PulsesCount_max = 300
+PulsesCount_min = 200

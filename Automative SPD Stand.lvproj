@@ -111,6 +111,10 @@
 				<Item Name="SPD.Error Handler.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Error Handler.vi"/>
 				<Item Name="Obtain Events.vi" Type="VI" URL="../SPD Stand/SubVIs/Obtain Events.vi"/>
 				<Item Name="Destroy Events.vi" Type="VI" URL="../SPD Stand/SubVIs/Destroy Events.vi"/>
+				<Item Name="Add XY point to Graph.vi" Type="VI" URL="../SPD Stand/SubVIs/Add XY point to Graph.vi"/>
+				<Item Name="Comparison.vi" Type="VI" URL="../SPD Stand/SubVIs/Comparison.vi"/>
+				<Item Name="comparison mode.ctl" Type="VI" URL="../SPD Stand/SubVIs/comparison mode.ctl"/>
+				<Item Name="Min_Max.ctl" Type="VI" URL="../SPD Stand/SubVIs/Min_Max.ctl"/>
 			</Item>
 			<Item Name="typedefs" Type="Folder">
 				<Item Name="SPD.Stand Ctrl.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Ctrl.ctl"/>
@@ -130,9 +134,21 @@
 				<Item Name="SPD.Write SPD Controller Setup.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Write SPD Controller Setup.vi"/>
 			</Item>
 			<Item Name="SPDTests" Type="Folder">
+				<Item Name="SubTests" Type="Folder">
+					<Item Name="SPD.HV_Bias SubTest.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/SPD.HV_Bias SubTest.vi"/>
+				</Item>
 				<Item Name="SPD.No Pulses Test.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.No Pulses Test.vi"/>
 				<Item Name="SPD.HV_Bias setup.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.HV_Bias setup.vi"/>
 				<Item Name="SPD.Strobe Phase setup.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.Strobe Phase setup.vi"/>
+			</Item>
+			<Item Name="ConfigFile" Type="Folder">
+				<Item Name="ReadConfig" Type="Folder">
+					<Item Name="SPD.Config Read Aliases.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Aliases.vi"/>
+					<Item Name="SPD.Config Read Test00 No Pulses.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test00 No Pulses.vi"/>
+					<Item Name="SPD.Config Read Test01 HV_Bias.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test01 HV_Bias.vi"/>
+				</Item>
+				<Item Name="SPD.Open Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Open Config File.vi"/>
+				<Item Name="SPD.Close Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Close Config File.vi"/>
 			</Item>
 			<Item Name="SPD.Chech HW status.vi" Type="VI" URL="../SPD Stand/SPD.Chech HW status.vi"/>
 			<Item Name="SPD.Disconnect HW.vi" Type="VI" URL="../SPD Stand/SPD.Disconnect HW.vi"/>
@@ -140,6 +156,7 @@
 		<Item Name="SPD Stand Test.vi" Type="VI" URL="../SPD Stand Test.vi"/>
 		<Item Name="SPD Stand Operator UI.vi" Type="VI" URL="../SPD Stand Operator UI.vi"/>
 		<Item Name="SPD Test Launcher.vi" Type="VI" URL="../SPD Test Launcher.vi"/>
+		<Item Name="SPD.HV_Bias Test Params.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/SPD.HV_Bias Test Params.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="LeCroy Wave Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/LeCroy Wave Series/LeCroy Wave Series.lvlib"/>
@@ -166,6 +183,12 @@
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
+				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 			</Item>
 			<Item Name="libSPD.dll" Type="Document" URL="../Instruments/SPD HID Interface/hidSPDLibForLabView/hidSPD DLL files/libSPD.dll"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
