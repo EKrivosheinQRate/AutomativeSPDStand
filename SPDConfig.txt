@@ -1,7 +1,7 @@
 [Equipment]
 DevBAlias = COM3
 FreqCAlias = KeySight_53230A
-8164BIPAddress = 192.168.1.101
+8164BIPAddress = 192.168.1.102
 ScopeAlias = LeCroy
 
 [Test00_NoPulses]
@@ -11,11 +11,25 @@ FreqC_GateTime = 1
 [Test01_HV_bias]
 FS = 100
 TS = 2
-HV_Bias_Quick_Start = 70
-HV_Bias_Quick_Stop = 85
-HV_Bias_Quick_Step = 2,5
-FreqC_Quick_GateTime = 0,1
+HV_Bias_Quick_Start = 68
+HV_Bias_Quick_Stop = 80
+HV_Bias_Quick_Step = 0,5
+FreqC_Quick_GateTime = 0,5
 HV_Bias_Precise_Step = 0,05
 FreqC_Precise_GateTime = 0,5
 PulsesCount_max = 300
 PulsesCount_min = 200
+
+[Test02_Strobe_Phase]
+FS = 100
+TS = 2
+Laser_WaveLength = 1550
+P_units = 1
+P_set = 3,6E-9
+Att = 50
+Phase_Quick_Start = 0
+Phase_Quick_Stop = 300
+Phase_Quick_Step = 10
+FreqC_Quick_Gate = 0,2
+Phase_Step_Precise = 1
+FreqC_Precise_Gate = 1
