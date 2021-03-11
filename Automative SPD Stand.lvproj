@@ -150,17 +150,30 @@
 						<Item Name="SPD.Strobe_Phase Sub Test.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/02_Strobe_Phase Test/SPD.Strobe_Phase Sub Test.vi"/>
 						<Item Name="SPD.Strobe_Phase Test Limits.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/02_Strobe_Phase Test/SPD.Strobe_Phase Test Limits.ctl"/>
 					</Item>
+					<Item Name="03_MeasGrid" Type="Folder">
+						<Item Name="SPD.HV_bias Range.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/03_MeasGrid/SPD.HV_bias Range.vi"/>
+						<Item Name="SPD.HV_Grid Test Params.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/03_MeasGrid/SPD.HV_Grid Test Params.ctl"/>
+						<Item Name="SPD.HV_Grid Initial Range Search Controller.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/03_MeasGrid/SPD.HV_Grid Initial Range Search Controller.vi"/>
+						<Item Name="HV_Grid Range Search States.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/03_MeasGrid/HV_Grid Range Search States.ctl"/>
+						<Item Name="SPD.HV_Grid Calc Measurment Time.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/03_MeasGrid/SPD.HV_Grid Calc Measurment Time.vi"/>
+					</Item>
+					<Item Name="04_DCR" Type="Folder">
+						<Item Name="SPD.DCR Meas.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/04_DCR/SPD.DCR Meas.vi"/>
+						<Item Name="SPD.DCR Test Params.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/04_DCR/SPD.DCR Test Params.ctl"/>
+					</Item>
 					<Item Name="Measurements" Type="Folder">
-						<Item Name="SPD.Meas Setup.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Meas Setup.ctl"/>
+						<Item Name="SPD.Grid Meas Setup.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Grid Meas Setup.ctl"/>
 						<Item Name="SPD.Test Range.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Test Range.ctl"/>
 						<Item Name="SPD.Set Temp and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Set Temp and Wait For Ready.vi"/>
 						<Item Name="SPD.Set Stb Code and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Set Stb Code and Wait For Ready.vi"/>
 						<Item Name="SPD.Set HV_Bias and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Set HV_Bias and Wait For Ready.vi"/>
 						<Item Name="SPD.QE&amp;DCR Meas.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.QE&amp;DCR Meas.vi"/>
+						<Item Name="SPD.DCR_Test.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.DCR_Test.vi"/>
 					</Item>
 				</Item>
+				<Item Name="SPD.Set Meas Grid.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.Set Meas Grid.vi"/>
 				<Item Name="SPD.No Pulses Test.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.No Pulses Test.vi"/>
-				<Item Name="SPD.HV_Bias setup.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.HV_Bias setup.vi"/>
+				<Item Name="SPD.HV_Bias Test.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.HV_Bias Test.vi"/>
 				<Item Name="SPD.Strobe Phase setup.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.Strobe Phase setup.vi"/>
 				<Item Name="SPD.Measurments.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.Measurments.vi"/>
 			</Item>
@@ -170,6 +183,8 @@
 					<Item Name="SPD.Config Read Test00 No Pulses.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test00 No Pulses.vi"/>
 					<Item Name="SPD.Config Read Test01 HV_Bias.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test01 HV_Bias.vi"/>
 					<Item Name="SPD.Config Read Test02 Strobe_Phase.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test02 Strobe_Phase.vi"/>
+					<Item Name="SPD.Config Read Test03 HV_Grid.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test03 HV_Grid.vi"/>
+					<Item Name="SPD.Config Read Test04 DCR.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test04 DCR.vi"/>
 				</Item>
 				<Item Name="SPD.Open Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Open Config File.vi"/>
 				<Item Name="SPD.Close Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Close Config File.vi"/>
@@ -180,6 +195,7 @@
 		<Item Name="SPD Stand Operator UI.vi" Type="VI" URL="../SPD Stand Operator UI.vi"/>
 		<Item Name="SPD Test Launcher.vi" Type="VI" URL="../SPD Test Launcher.vi"/>
 		<Item Name="SPD Get Results Test.vi" Type="VI" URL="../SPD Get Results Test.vi"/>
+		<Item Name="HV_Grid Viewer.vi" Type="VI" URL="../HV_Grid Viewer.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="LeCroy Wave Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/LeCroy Wave Series/LeCroy Wave Series.lvlib"/>
