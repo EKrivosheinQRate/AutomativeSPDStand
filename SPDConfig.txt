@@ -1,9 +1,3 @@
-[Equipment]
-DevBAlias = COM3
-FreqCAlias = KeySight_53230A
-8164BIPAddress = 192.168.1.102
-ScopeAlias = LeCroy
-
 [Test00_NoPulses]
 HV_Bias = 40
 FreqC_GateTime = 1
@@ -11,7 +5,7 @@ FreqC_GateTime = 1
 [Test01_HV_bias]
 FS = 100
 TS = 2
-HV_Bias_Quick_Start = 68
+HV_Bias_Quick_Start = 60
 HV_Bias_Quick_Stop = 80
 HV_Bias_Quick_Step = 0,5
 FreqC_Quick_GateTime = 0,5
@@ -37,17 +31,33 @@ FreqC_Precise_Gate = 1
 [Test03_Measurments_Grid]
 HV_Grid_FS = 100
 HV_Grid_TS = 2
-HV_Grid_Start = 68
-HV_Grid_Stop = 75
+HV_Grid_Start = 60
+HV_Grid_Stop = 70
 HV_Grid_Initial_Step = 1
 HV_Grid_FreqC_Gate_Time = 0,1
 HV_Grid_FreqC_Num_Of_Meas = 10
 HV_Grid_Pulse_Count_min = 30
 HV_Grid_Pulse_Count_max = 1000
-HV_Grid_HV_bias_Number_Of_Intervals = 20
+HV_Grid_HV_bias_Number_Of_Intervals = 6
 
 [Test04_Measurments_DCR]
 DCR_FS = 100
 DCR_TS = 2
 DCR_FreqC_Gate_Time = 0,1
 DCR_FreqC_Num_Of_Meas = 10
+
+[Test05_Measurments_QE]
+QE_FreqC_Gate_Time = 0,1
+QE_FreqC_Num_Of_Meas = 10
+QE_ATT3 = 60
+TR_Scope_Recall_File = spd-jitter-setup--00002.lss
+TR_Histo_Size = 10000
+
+[Test06_Measurments_AP]
+AP_FS = 10
+AP_TS = 2
+AP_ATT3 = 60
+AP_FreqC_Gate_Time = 0,1
+AP_FreqC_Num_Of_Meas = 10
+AP_Scope_Recall_File = spd-ap-setup-100khz--00000.lss
+AP_Histo_Size = 10000

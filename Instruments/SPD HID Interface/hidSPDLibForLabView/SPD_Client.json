@@ -1,0 +1,820 @@
+{
+    "commands": [
+        {
+            "alias": "GetData",
+            "id": 0,
+            "in": [
+                {
+                    "alias": "thrm_heatsink",
+                    "name": "температура радиатора",
+                    "script": "",
+                    "type": "float",
+                    "units": "°C",
+                    "view": "num"
+                },
+                {
+                    "alias": "thrm_VD",
+                    "name": "температура фотодиода",
+                    "script": "",
+                    "type": "float",
+                    "units": "°C",
+                    "view": "num"
+                },
+                {
+                    "alias": "TEC_voltage",
+                    "name": "напряжение TEC-драйвера",
+                    "script": "",
+                    "type": "float",
+                    "units": "В",
+                    "view": "num"
+                },
+                {
+                    "alias": "Bias_VD",
+                    "name": "смещение фотодиода измерение",
+                    "script": "",
+                    "type": "float",
+                    "units": "В",
+                    "view": "num"
+                },
+                {
+                    "alias": "RF_PWR_SNS",
+                    "name": "Датчик ВЧ мощности",
+                    "script": "",
+                    "type": "float",
+                    "units": "дБм",
+                    "view": "num"
+                },
+                {
+                    "alias": "thrm_used",
+                    "name": "текущая уставка температуры",
+                    "script": "",
+                    "type": "float",
+                    "units": "°C",
+                    "view": "num"
+                },
+                {
+                    "alias": "hv_bias_used",
+                    "name": "уставка смещения (расчет)",
+                    "script": "",
+                    "type": "float",
+                    "units": "В",
+                    "view": "num"
+                },
+                {
+                    "alias": "hv_code_used",
+                    "name": "код смещения",
+                    "script": "",
+                    "type": "Uint16",
+                    "units": "",
+                    "view": "hex"
+                },
+                {
+                    "alias": "stb_code_used",
+                    "name": "код строба",
+                    "script": "",
+                    "type": "Uint16",
+                    "units": "",
+                    "view": "hex"
+                },
+                {
+                    "alias": "Number_SPD",
+                    "name": "номер детектора",
+                    "script": "",
+                    "type": "Uint8",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "Ready_SPD",
+                    "name": "Готовность детектора",
+                    "script": "num",
+                    "type": "Uint8",
+                    "units": "",
+                    "view": "hex"
+                },
+                {
+                    "alias": "StatusSPD",
+                    "name": "Status",
+                    "type": "uint32",
+                    "units": "",
+                    "view": "bin"
+                },
+                {
+                    "alias": "PLL_ErrorCount",
+                    "name": "Ошибки PLL",
+                    "type": "uint8",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "thrm_end",
+                    "name": "конечная уставка температуры",
+                    "script": "",
+                    "type": "float",
+                    "units": "°C",
+                    "view": "num"
+                },
+                {
+                    "alias": "thrm_error",
+                    "name": "невязка температуры",
+                    "type": "float",
+                    "units": "K",
+                    "view": "num"
+                },
+                {
+                    "alias": "stableI",
+                    "name": "Интеграл стабильности",
+                    "type": "float",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "pid_error",
+                    "name": "ошибка ПИД",
+                    "type": "float",
+                    "view": "num"
+                },
+                {
+                    "alias": "Bias_VD_Setpoint",
+                    "name": "смещение фотодиода уставка",
+                    "script": "",
+                    "type": "float",
+                    "units": "В",
+                    "view": "num"
+                }
+            ],
+            "name": "Телеметрия",
+            "out": [
+            ]
+        },
+        {
+            "alias": "Setup_SPD_controller",
+            "id": 1,
+            "in": [
+                {
+                    "alias": "Tset",
+                    "default": "",
+                    "name": "Уставка TU1",
+                    "type": "float",
+                    "units": "°C",
+                    "view": "num"
+                },
+                {
+                    "alias": "HV_bias",
+                    "default": "",
+                    "name": "Напряжение смещения фотодиода",
+                    "type": "float",
+                    "units": "В",
+                    "view": "num"
+                },
+                {
+                    "alias": "HV_code",
+                    "default": "",
+                    "name": "код смещения фотодиода",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "hex"
+                },
+                {
+                    "alias": "DDS_stb_code",
+                    "default": "",
+                    "name": "код амплитуды строба",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "hex"
+                }
+            ],
+            "name": "Настройка контроллера",
+            "out": [
+                {
+                    "alias": "Tset",
+                    "default": "-45.0",
+                    "name": "Уставка TU1",
+                    "type": "float",
+                    "units": "°C",
+                    "view": "num"
+                },
+                {
+                    "alias": "HV_bias",
+                    "default": "40.0",
+                    "name": "Напряжение смещения фотодиода",
+                    "type": "float",
+                    "units": "V",
+                    "view": "num"
+                },
+                {
+                    "alias": "DDS_stb_code",
+                    "default": "1FF",
+                    "name": "код амплитуды строба",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "hex"
+                },
+                {
+                    "alias": "DFU",
+                    "default": "0",
+                    "name": "Запуск USB загрузчика",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "MCU_RESET",
+                    "default": "0",
+                    "name": "Запрос сброса контроллера",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "num"
+                }
+            ]
+        },
+        {
+            "alias": "DefaultSetPID",
+            "id": 2,
+            "in": [
+                {
+                    "alias": "p_coeff",
+                    "default": "",
+                    "name": "Коэффициент P",
+                    "type": "float",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "i_coeff",
+                    "default": "",
+                    "name": "Коэффициент I",
+                    "type": "float",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "d_coeff",
+                    "default": "",
+                    "name": "Коэффициент D",
+                    "type": "float",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "T_set",
+                    "default": "",
+                    "name": "Уставка температуры",
+                    "type": "float",
+                    "units": "°C",
+                    "view": "num"
+                },
+                {
+                    "alias": "T_err",
+                    "default": "",
+                    "name": "Точность установки температуры",
+                    "type": "float",
+                    "units": "°C",
+                    "view": "num"
+                },
+                {
+                    "alias": "PWR_RCVR_DELAY",
+                    "default": "",
+                    "name": "Задержка включения питания детектора",
+                    "type": "UInt32",
+                    "units": "Секунды",
+                    "view": "num"
+                },
+                {
+                    "alias": "adc_filtr",
+                    "default": "",
+                    "name": "длина фильтра АЦП",
+                    "type": "UInt32",
+                    "units": "",
+                    "view": "num"
+                }
+            ],
+            "name": "Настройка параметров модели ПИД-регулятора",
+            "out": [
+                {
+                    "alias": "SPD_security_key",
+                    "default": "1235",
+                    "name": "Ключ разрешения записи настроек",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "p_coeff",
+                    "default": "300",
+                    "name": "Коэффициент P",
+                    "type": "float",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "i_coeff",
+                    "default": "3",
+                    "name": "Коэффициент I",
+                    "type": "float",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "d_coeff",
+                    "default": "0.0",
+                    "name": "Коэффициент D",
+                    "type": "float",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "PWR_RCVR_DELAY",
+                    "default": "60",
+                    "name": "Задержка включения питания детектора",
+                    "type": "UInt32",
+                    "units": "Секунды",
+                    "view": "num"
+                },
+                {
+                    "alias": "adc_filtr",
+                    "default": "120",
+                    "name": "длина фильтра АЦП",
+                    "type": "UInt32",
+                    "units": "",
+                    "view": "num"
+                }
+            ]
+        },
+        {
+            "alias": "SPD_DDS",
+            "id": 6,
+            "in": [
+                {
+                    "alias": "DDS_FTW",
+                    "default": "",
+                    "name": "Подстройка частоты",
+                    "type": "UInt64",
+                    "units": "",
+                    "view": "hex"
+                },
+                {
+                    "alias": "DDS_PHS",
+                    "default": "",
+                    "name": "Подстройка фазы",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "hex"
+                }
+            ],
+            "name": "Настройки синтезатора частот (DDS)",
+            "out": [
+                {
+                    "alias": "SPD_security_key",
+                    "default": "0",
+                    "name": "Ключ разрешения записи настроек",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "DDS_PHS",
+                    "default": "0",
+                    "name": "Подстройка фазы",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "hex"
+                },
+                {
+                    "alias": "DDS_FTW",
+                    "default": "0",
+                    "name": "Подстройка частоты",
+                    "type": "UInt64",
+                    "units": "",
+                    "view": "hex"
+                }
+            ]
+        },
+        {
+            "alias": "SerialNumber",
+            "id": 7,
+            "in": [
+                {
+                    "alias": "serial_number_SPD",
+                    "default": "",
+                    "name": "Серийный номер",
+                    "type": "UInt32",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "SPD_soft_version",
+                    "default": "",
+                    "name": "Версия ПО микроконтроллера",
+                    "type": "Uint32",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "date_day",
+                    "default": "",
+                    "name": "день производства",
+                    "type": "Uint16",
+                    "units": "день",
+                    "view": "num"
+                },
+                {
+                    "alias": "date_month",
+                    "default": "",
+                    "name": "месяц производства",
+                    "type": "Uint16",
+                    "units": "месяц",
+                    "view": "num"
+                },
+                {
+                    "alias": "date_year",
+                    "default": "",
+                    "name": "год производства",
+                    "type": "Uint16",
+                    "units": "год",
+                    "view": "num"
+                }
+            ],
+            "name": "Установка/чтение серийного номера",
+            "out": [
+                {
+                    "alias": "SPD_security_key",
+                    "default": "0",
+                    "name": "Ключ разрешения записи настроек",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "serial_number_SPD",
+                    "default": "1",
+                    "name": "Серийный номер",
+                    "type": "UInt32",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "SPD_soft_version",
+                    "default": "3",
+                    "name": "Версия ПО микроконтроллера",
+                    "type": "Uint32",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "date_day",
+                    "default": "1",
+                    "name": "день производства",
+                    "type": "Uint8",
+                    "units": "день",
+                    "view": "num"
+                },
+                {
+                    "alias": "date_month",
+                    "default": "1",
+                    "name": "месяц производства",
+                    "type": "Uint8",
+                    "units": "месяц",
+                    "view": "num"
+                },
+                {
+                    "alias": "date_year",
+                    "default": "2018",
+                    "name": "год производства",
+                    "type": "Uint16",
+                    "units": "год",
+                    "view": "num"
+                }
+            ]
+        },
+        {
+            "alias": "SPD_name_write",
+            "id": 8,
+            "in": [
+                {
+                    "alias": "SPD_name_txt",
+                    "default": "",
+                    "name": "Строка",
+                    "type": "string",
+                    "units": "",
+                    "view": "hex"
+                }
+            ],
+            "name": "Установка наименования",
+            "out": [
+                {
+                    "alias": "SPD_name_txt",
+                    "default": "0",
+                    "name": "Строка текстового дескриптора",
+                    "type": "string",
+                    "units": "",
+                    "view": "hex"
+                }
+            ]
+        },
+        {
+            "alias": "SPD_name_read",
+            "id": 9,
+            "in": [
+                {
+                    "alias": "SPD_name_txt",
+                    "default": "",
+                    "name": "Строка",
+                    "type": "string",
+                    "units": "",
+                    "view": "str"
+                }
+            ],
+            "name": "Чтение наименования",
+            "out": [
+            ]
+        },
+        {
+            "alias": "Number_SPD",
+            "id": 11,
+            "in": [
+                {
+                    "alias": "SPD_num",
+                    "default": "0",
+                    "name": "Номер детектор",
+                    "type": "Uint8",
+                    "units": "",
+                    "view": "char"
+                }
+            ],
+            "name": "номер ДОФ (запись)",
+            "out": [
+                {
+                    "alias": "SPD_num",
+                    "default": "0",
+                    "name": "Строка текстового дескриптора",
+                    "type": "Uint8",
+                    "units": "",
+                    "view": "char"
+                }
+            ]
+        },
+        {
+            "alias": "ManualSet",
+            "id": 13,
+            "in": [
+            ],
+            "name": "Ручной режим",
+            "out": [
+                {
+                    "alias": "DetEnable",
+                    "default": "0",
+                    "name": "Включение детектора",
+                    "type": "bool",
+                    "view": "bool"
+                }
+            ]
+        },
+        {
+            "alias": "TecManualSet",
+            "id": 14,
+            "in": [
+            ],
+            "name": "Ручной режим Пельтье",
+            "out": [
+                {
+                    "alias": "TEC3Manual",
+                    "default": "0",
+                    "name": "Ручной режим Пельтье",
+                    "type": "bool",
+                    "view": "bool"
+                },
+                {
+                    "alias": "TEC3Manual_value",
+                    "default": "0",
+                    "name": "Мощность Пельтье: 0-255",
+                    "type": "uint8",
+                    "view": "num"
+                },
+                {
+                    "alias": "DACEnable",
+                    "default": "0",
+                    "name": "Запись регистра ЦАП",
+                    "type": "bool",
+                    "view": "bool"
+                },
+                {
+                    "alias": "DAC_value",
+                    "default": "0",
+                    "name": "Значение ЦАП: 0-4095",
+                    "type": "uint16",
+                    "view": "num"
+                },
+                {
+                    "alias": "DACBufEnable",
+                    "default": "0",
+                    "name": "Включение буфера ЦАП",
+                    "type": "bool",
+                    "view": "bool"
+                }
+            ]
+        },
+        {
+            "alias": "EEPReset",
+            "id": 15,
+            "in": [
+            ],
+            "name": "Сброс EEPROM",
+            "out": [
+                {
+                    "alias": "eep_reset",
+                    "name": "Reset EEPROM",
+                    "type": "bool",
+                    "view": "bool"
+                }
+            ]
+        },
+        {
+            "alias": "ThermoAutomat",
+            "id": 16,
+            "in": [
+                {
+                    "alias": "slope_down",
+                    "name": "Скорость охлаждения, К/мин",
+                    "type": "float",
+                    "units": "K/min",
+                    "view": "num"
+                },
+                {
+                    "alias": "slope_up",
+                    "name": "Скорость нагрева, К/мин",
+                    "type": "float",
+                    "units": "K/min",
+                    "view": "num"
+                },
+                {
+                    "alias": "TimeBase",
+                    "name": "Скорость обновления, мс",
+                    "type": "uint32",
+                    "units": "ms",
+                    "view": "num"
+                }
+            ],
+            "name": "Автомат температуры",
+            "out": [
+                {
+                    "alias": "SPD_security_key",
+                    "default": "1235",
+                    "name": "Ключ разрешения записи настроек",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "slope_down",
+                    "default": "12.0",
+                    "name": "Скорость охлаждения, К/мин",
+                    "type": "float",
+                    "units": "K/min",
+                    "view": "num"
+                },
+                {
+                    "alias": "slope_up",
+                    "default": "2.0",
+                    "name": "Скорость нагрева, К/мин",
+                    "type": "float",
+                    "units": "K/min",
+                    "view": "num"
+                },
+                {
+                    "alias": "TimeBase",
+                    "default": 100,
+                    "name": "Скорость обновления",
+                    "type": "uint32",
+                    "units": "ms",
+                    "view": "num"
+                }
+            ]
+        },
+        {
+            "alias": "hv_raw",
+            "id": 17,
+            "in": [
+            ],
+            "name": "HV raw",
+            "out": [
+                {
+                    "alias": "hv_raw_ext",
+                    "default": "-1",
+                    "name": "Смещения в ЦАП внешняя (-1 : 65535)",
+                    "type": "int32",
+                    "view": "num"
+                },
+                {
+                    "alias": "hv_raw_int",
+                    "default": "-1",
+                    "name": "Смещения в ЦАП внутр (-1 : 255)",
+                    "type": "int32",
+                    "view": "num"
+                }
+            ]
+        },
+        {
+            "alias": "DDSRaw",
+            "id": 18,
+            "in": [
+            ],
+            "name": "DDS",
+            "out": [
+                {
+                    "alias": "enable",
+                    "default": "false",
+                    "name": "Включение",
+                    "type": "bool",
+                    "view": "bool"
+                }
+            ]
+        },
+        {
+            "alias": "StableCriteria",
+            "id": 19,
+            "in": [
+                {
+                    "alias": "StableIntegralThreshold",
+                    "default": "0.025",
+                    "name": "Порог стабильности",
+                    "type": "float",
+                    "view": "num"
+                },
+                {
+                    "alias": "CheckTimeout",
+                    "default": "30",
+                    "name": "Период проверки, сек",
+                    "type": "UInt8",
+                    "units": "сек",
+                    "view": "num"
+                }
+            ],
+            "name": "Критерий стабильности",
+            "out": [
+                {
+                    "alias": "SPD_security_key",
+                    "default": "1235",
+                    "name": "Ключ разрешения записи настроек",
+                    "type": "UInt16",
+                    "units": "",
+                    "view": "num"
+                },
+                {
+                    "alias": "StableIntegralThreshold",
+                    "default": "0.025",
+                    "name": "Порог стабильности",
+                    "type": "float",
+                    "view": "num"
+                },
+                {
+                    "alias": "CheckTimeout",
+                    "default": "30",
+                    "name": "Период проверки, сек",
+                    "type": "UInt8",
+                    "units": "сек",
+                    "view": "num"
+                }
+            ]
+        },
+        {
+            "alias": "Version",
+            "id": 255,
+            "in": [
+                {
+                    "alias": "hw_version",
+                    "default": "0",
+                    "name": "Hardware version",
+                    "type": "UInt32"
+                },
+                {
+                    "alias": "sw_version",
+                    "default": "0",
+                    "name": "Software version",
+                    "type": "UInt32"
+                }
+            ],
+            "name": "Version",
+            "out": [
+            ]
+        }
+    ],
+    "settings": {
+        "inactivePlots": [
+            "температура радиатора",
+            "Датчик ВЧ мощности",
+            "уставка смещения (расчет)",
+            "код смещения",
+            "код строба",
+            "номер детектора",
+            "Готовность детектора",
+            "Status",
+            "Ошибки PLL",
+            "конечная уставка температуры",
+            "Интеграл стабильности",
+            "ошибка ПИД"
+        ],
+        "maxConsoleEntries": 100,
+        "maxPlotXPoints": 500
+    }
+}

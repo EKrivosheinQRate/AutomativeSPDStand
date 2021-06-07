@@ -92,6 +92,7 @@
 				<Item Name="LeCroy SDA830 API" Type="Folder">
 					<Item Name="Read" Type="Folder">
 						<Item Name="LeCroy.Read Single Waveform.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/Read/LeCroy.Read Single Waveform.vi"/>
+						<Item Name="LeCroy.Read Scan Histo.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/Read/LeCroy.Read Scan Histo.vi"/>
 					</Item>
 					<Item Name="LeCroy.Read.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Read.vi"/>
 					<Item Name="LeCroy.Open Session.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Open Session.vi"/>
@@ -100,31 +101,35 @@
 					<Item Name="LeCroy.Configure Trigger.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Configure Trigger.vi"/>
 					<Item Name="LeCroy.Configure Channel.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Configure Channel.vi"/>
 					<Item Name="LeCroy.Configure Time.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Configure Time.vi"/>
+					<Item Name="LeCroy.Recall Histo Config.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Recall Histo Config.vi"/>
+					<Item Name="LeCroy.Reset Histo.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Reset Histo.vi"/>
+					<Item Name="LeCroy.Trigger Set to Normal Mode.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Trigger Set to Normal Mode.vi"/>
+					<Item Name="LeCroy.Trigger Stop.vi" Type="VI" URL="../Instruments/LeCroy SDA830/LeCroy SDA830 API/LeCroy.Trigger Stop.vi"/>
 				</Item>
 			</Item>
 			<Item Name="8164B Lan test.vi" Type="VI" URL="../Instruments/8164B Lan test.vi"/>
-			<Item Name="LeCroy 8404MR VISA Test.vi" Type="VI" URL="../Instruments/LeCroy 8404MR VISA Test.vi"/>
 		</Item>
 		<Item Name="SPD Stand" Type="Folder">
 			<Item Name="SubVIs" Type="Folder">
 				<Item Name="Enable Control.vi" Type="VI" URL="../SPD Stand/SubVIs/Enable Control.vi"/>
 				<Item Name="SPD.Error Handler.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Error Handler.vi"/>
-				<Item Name="Obtain Events.vi" Type="VI" URL="../SPD Stand/SubVIs/Obtain Events.vi"/>
-				<Item Name="Destroy Events.vi" Type="VI" URL="../SPD Stand/SubVIs/Destroy Events.vi"/>
 				<Item Name="Add XY point to Graph.vi" Type="VI" URL="../SPD Stand/SubVIs/Add XY point to Graph.vi"/>
 				<Item Name="Comparison.vi" Type="VI" URL="../SPD Stand/SubVIs/Comparison.vi"/>
 				<Item Name="comparison mode.ctl" Type="VI" URL="../SPD Stand/SubVIs/comparison mode.ctl"/>
 				<Item Name="Min_Max.ctl" Type="VI" URL="../SPD Stand/SubVIs/Min_Max.ctl"/>
-				<Item Name="SPD.Update Lists.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Update Lists.vi"/>
-				<Item Name="SPD.Get Results.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Get Results.vi"/>
-				<Item Name="SPD.Params Selectors.ctl" Type="VI" URL="../SPD Stand/SubVIs/SPD.Params Selectors.ctl"/>
-				<Item Name="SPD.Surface Plot.ctl" Type="VI" URL="../SPD Stand/SubVIs/SPD.Surface Plot.ctl"/>
+				<Item Name="SPD.Set Temp and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Set Temp and Wait For Ready.vi"/>
+				<Item Name="SPD.Set Stb Code and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Set Stb Code and Wait For Ready.vi"/>
+				<Item Name="SPD.Set HV_Bias and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Set HV_Bias and Wait For Ready.vi"/>
+				<Item Name="SPD.Wait For SPD Ready.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Wait For SPD Ready.vi"/>
+				<Item Name="Wait.vi" Type="VI" URL="../SPD Stand/SubVIs/Wait.vi"/>
 			</Item>
 			<Item Name="typedefs" Type="Folder">
 				<Item Name="SPD.Stand Ctrl.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Ctrl.ctl"/>
 				<Item Name="SPD.Stand Tabs.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Tabs.ctl"/>
 				<Item Name="SPD.Events.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Events.ctl"/>
 				<Item Name="SPD.Meas Result.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Meas Result.ctl"/>
+				<Item Name="SPD.Stand state.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand state.ctl"/>
+				<Item Name="SPD.Queues.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Queues.ctl"/>
 			</Item>
 			<Item Name="Equipment Test" Type="Folder">
 				<Item Name="SPD.Connection Test.vi" Type="VI" URL="../SPD Stand/Equipment Test/SPD.Connection Test.vi"/>
@@ -150,32 +155,11 @@
 						<Item Name="SPD.Strobe_Phase Sub Test.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/02_Strobe_Phase Test/SPD.Strobe_Phase Sub Test.vi"/>
 						<Item Name="SPD.Strobe_Phase Test Limits.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/02_Strobe_Phase Test/SPD.Strobe_Phase Test Limits.ctl"/>
 					</Item>
-					<Item Name="03_MeasGrid" Type="Folder">
-						<Item Name="SPD.HV_bias Range.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/03_MeasGrid/SPD.HV_bias Range.vi"/>
-						<Item Name="SPD.HV_Grid Test Params.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/03_MeasGrid/SPD.HV_Grid Test Params.ctl"/>
-						<Item Name="SPD.HV_Grid Initial Range Search Controller.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/03_MeasGrid/SPD.HV_Grid Initial Range Search Controller.vi"/>
-						<Item Name="HV_Grid Range Search States.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/03_MeasGrid/HV_Grid Range Search States.ctl"/>
-						<Item Name="SPD.HV_Grid Calc Measurment Time.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/03_MeasGrid/SPD.HV_Grid Calc Measurment Time.vi"/>
-					</Item>
-					<Item Name="04_DCR" Type="Folder">
-						<Item Name="SPD.DCR Meas.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/04_DCR/SPD.DCR Meas.vi"/>
-						<Item Name="SPD.DCR Test Params.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/04_DCR/SPD.DCR Test Params.ctl"/>
-					</Item>
-					<Item Name="Measurements" Type="Folder">
-						<Item Name="SPD.Grid Meas Setup.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Grid Meas Setup.ctl"/>
-						<Item Name="SPD.Test Range.ctl" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Test Range.ctl"/>
-						<Item Name="SPD.Set Temp and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Set Temp and Wait For Ready.vi"/>
-						<Item Name="SPD.Set Stb Code and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Set Stb Code and Wait For Ready.vi"/>
-						<Item Name="SPD.Set HV_Bias and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.Set HV_Bias and Wait For Ready.vi"/>
-						<Item Name="SPD.QE&amp;DCR Meas.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.QE&amp;DCR Meas.vi"/>
-						<Item Name="SPD.DCR_Test.vi" Type="VI" URL="../SPD Stand/SPDTests/SubTests/Measurements/SPD.DCR_Test.vi"/>
-					</Item>
 				</Item>
-				<Item Name="SPD.Set Meas Grid.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.Set Meas Grid.vi"/>
 				<Item Name="SPD.No Pulses Test.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.No Pulses Test.vi"/>
 				<Item Name="SPD.HV_Bias Test.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.HV_Bias Test.vi"/>
 				<Item Name="SPD.Strobe Phase setup.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.Strobe Phase setup.vi"/>
-				<Item Name="SPD.Measurments.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.Measurments.vi"/>
+				<Item Name="SPD.Tests.vi" Type="VI" URL="../SPD Stand/SPDTests/SPD.Tests.vi"/>
 			</Item>
 			<Item Name="ConfigFile" Type="Folder">
 				<Item Name="ReadConfig" Type="Folder">
@@ -185,37 +169,98 @@
 					<Item Name="SPD.Config Read Test02 Strobe_Phase.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test02 Strobe_Phase.vi"/>
 					<Item Name="SPD.Config Read Test03 HV_Grid.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test03 HV_Grid.vi"/>
 					<Item Name="SPD.Config Read Test04 DCR.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test04 DCR.vi"/>
+					<Item Name="SPD.Config Read Test05 QE.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test05 QE.vi"/>
+					<Item Name="SPD.Config Read Test06 AP.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test06 AP.vi"/>
 				</Item>
 				<Item Name="SPD.Open Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Open Config File.vi"/>
 				<Item Name="SPD.Close Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Close Config File.vi"/>
+				<Item Name="SPD.Config File ctrl.ctl" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Config File ctrl.ctl"/>
+				<Item Name="SPD.Update Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Update Config File.vi"/>
 			</Item>
-			<Item Name="SPD.Chech HW status.vi" Type="VI" URL="../SPD Stand/SPD.Chech HW status.vi"/>
+			<Item Name="ResultsFiles" Type="Folder">
+				<Item Name="SPD.SaveGrid.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.SaveGrid.vi"/>
+				<Item Name="SPD.Get Results Folder.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Get Results Folder.vi"/>
+				<Item Name="SPD.Save1DArray.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save1DArray.vi"/>
+				<Item Name="SPD.Save2DArray.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save2DArray.vi"/>
+				<Item Name="SPD.SaveDCR.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.SaveDCR.vi"/>
+				<Item Name="SPD.Save Measurments Result.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save Measurments Result.vi"/>
+				<Item Name="SPD.SaveAP Histo.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.SaveAP Histo.vi"/>
+				<Item Name="SPD.Get AP&amp;TR Histo Folder.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Get AP&amp;TR Histo Folder.vi"/>
+				<Item Name="SPD.SaveTR Histo.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.SaveTR Histo.vi"/>
+				<Item Name="SPD.Save Grid T and Stb.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save Grid T and Stb.vi"/>
+			</Item>
+			<Item Name="Logger" Type="Folder">
+				<Item Name="SPD.Logg Error.vi" Type="VI" URL="../SPD Stand/Logger/SPD.Logg Error.vi"/>
+				<Item Name="SPD.Console Logg.vi" Type="VI" URL="../SPD Stand/Logger/SPD.Console Logg.vi"/>
+			</Item>
+			<Item Name="SPD Measurments" Type="Folder">
+				<Item Name="typedefs" Type="Folder">
+					<Item Name="SPD.Grid Meas Setup.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/typedefs/SPD.Grid Meas Setup.ctl"/>
+					<Item Name="SPD.Test Range.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/typedefs/SPD.Test Range.ctl"/>
+					<Item Name="SPD.QE Strobe_Phase Tune Limits.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/typedefs/SPD.QE Strobe_Phase Tune Limits.ctl"/>
+				</Item>
+				<Item Name="SubVIs" Type="Folder">
+					<Item Name="SPD.Histo Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Histo Meas.vi"/>
+					<Item Name="SPD.Read Count Rate.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Read Count Rate.vi"/>
+				</Item>
+				<Item Name="AP" Type="Folder">
+					<Item Name="typedefs" Type="Folder">
+						<Item Name="SPD.AP Test Params.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/AP/typedefs/SPD.AP Test Params.ctl"/>
+					</Item>
+					<Item Name="SPD.AP Meas Const T.vi" Type="VI" URL="../SPD Stand/SPD Measurements/AP/SPD.AP Meas Const T.vi"/>
+					<Item Name="SPD.AP Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/AP/SPD.AP Meas.vi"/>
+				</Item>
+				<Item Name="QE&amp;TR" Type="Folder">
+					<Item Name="typedefs" Type="Folder">
+						<Item Name="SPD.QE Test Params.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/QE&amp;TR/typedefs/SPD.QE Test Params.ctl"/>
+					</Item>
+					<Item Name="SPD.QE&amp;TR Meas Const T.vi" Type="VI" URL="../SPD Stand/SPD Measurements/QE&amp;TR/SPD.QE&amp;TR Meas Const T.vi"/>
+					<Item Name="SPD.QE Tune Phese and Get Count Rate.vi" Type="VI" URL="../SPD Stand/SPD Measurements/QE&amp;TR/SPD.QE Tune Phese and Get Count Rate.vi"/>
+					<Item Name="SPD.QE&amp;TR Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/QE&amp;TR/SPD.QE&amp;TR Meas.vi"/>
+				</Item>
+				<Item Name="DCR" Type="Folder">
+					<Item Name="typedefs" Type="Folder">
+						<Item Name="SPD.DCR Test Params.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/DCR/typedefs/SPD.DCR Test Params.ctl"/>
+					</Item>
+					<Item Name="SPD.DCR Meas Const T.vi" Type="VI" URL="../SPD Stand/SPD Measurements/DCR/SPD.DCR Meas Const T.vi"/>
+					<Item Name="SPD.DCR Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/DCR/SPD.DCR Meas.vi"/>
+				</Item>
+				<Item Name="MeasGrid" Type="Folder">
+					<Item Name="typedefs" Type="Folder">
+						<Item Name="SPD.HV_Grid Test Params.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/typedefs/SPD.HV_Grid Test Params.ctl"/>
+						<Item Name="HV_Grid Range Search States.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/typedefs/HV_Grid Range Search States.ctl"/>
+					</Item>
+					<Item Name="SPD.HV_Bias Grid Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Bias Grid Meas.vi"/>
+					<Item Name="SPD.HV_bias Range.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_bias Range.vi"/>
+					<Item Name="SPD.HV_Grid Initial Range Search Controller.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Grid Initial Range Search Controller.vi"/>
+					<Item Name="SPD.HV_Grid Min Search.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Grid Min Search.vi"/>
+					<Item Name="SPD.HV_Grid Check HV_bias Limits.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Grid Check HV_bias Limits.vi"/>
+					<Item Name="SPD.HV_Grid Max Search.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Grid Max Search.vi"/>
+				</Item>
+				<Item Name="SPD.Measurments.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.Measurments.vi"/>
+				<Item Name="SPD.Measurments Error Handler.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.Measurments Error Handler.vi"/>
+				<Item Name="SPD.Set Meas Grid.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.Set Meas Grid.vi"/>
+				<Item Name="SPD.HV_Grid Calc Measurment Time.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.HV_Grid Calc Measurment Time.vi"/>
+			</Item>
+			<Item Name="Control Flow" Type="Folder">
+				<Item Name="SPD.Obtain Queues.vi" Type="VI" URL="../SPD Stand/Control flow/SPD.Obtain Queues.vi"/>
+				<Item Name="SPD.Release Queues.vi" Type="VI" URL="../SPD Stand/Control flow/SPD.Release Queues.vi"/>
+				<Item Name="SPD.Dequeue State.vi" Type="VI" URL="../SPD Stand/Control flow/SPD.Dequeue State.vi"/>
+				<Item Name="SPD.Enqueue States.vi" Type="VI" URL="../SPD Stand/Control flow/SPD.Enqueue States.vi"/>
+				<Item Name="Obtain Events.vi" Type="VI" URL="../SPD Stand/Control flow/Obtain Events.vi"/>
+				<Item Name="Destroy Events.vi" Type="VI" URL="../SPD Stand/Control flow/Destroy Events.vi"/>
+			</Item>
+			<Item Name="SPD.Check HW status.vi" Type="VI" URL="../SPD Stand/SPD.Check HW status.vi"/>
 			<Item Name="SPD.Disconnect HW.vi" Type="VI" URL="../SPD Stand/SPD.Disconnect HW.vi"/>
 		</Item>
-		<Item Name="SPD Stand Operator UI.vi" Type="VI" URL="../SPD Stand Operator UI.vi"/>
 		<Item Name="SPD Test Launcher.vi" Type="VI" URL="../SPD Test Launcher.vi"/>
-		<Item Name="SPD Get Results Test.vi" Type="VI" URL="../SPD Get Results Test.vi"/>
-		<Item Name="HV_Grid Viewer.vi" Type="VI" URL="../HV_Grid Viewer.vi"/>
+		<Item Name="Scope AP Meas test.vi" Type="VI" URL="../Scope AP Meas test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="LeCroy Wave Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/LeCroy Wave Series/LeCroy Wave Series.lvlib"/>
-			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
-				<Item Name="Waveform Scale and Offset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Waveform Scale and Offset.vi"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>
-				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
-				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
-				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
-				<Item Name="Write File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write File+ (string).vi"/>
-				<Item Name="compatWriteText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatWriteText.vi"/>
-				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
-				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
 				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
@@ -228,30 +273,29 @@
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="3D Surface Datatype.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Surface/3D Surface Datatype/3D Surface Datatype.lvclass"/>
-				<Item Name="3D Plot Datatype.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/3D Plot Datatype/3D Plot Datatype.lvclass"/>
-				<Item Name="3D Plot.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/3D Plot/3D Plot.lvclass"/>
-				<Item Name="3DMathPlot State Class.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot State Class.ctl"/>
-				<Item Name="3DMathPlot Ctrl Act Cluster.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Ctrl Act Cluster.ctl"/>
-				<Item Name="3DMathPlot Ctrl Act Queue.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Ctrl Act Queue.ctl"/>
-				<Item Name="NI_3D Picture Control.lvlib" Type="Library" URL="/&lt;vilib&gt;/picture/3D Picture Control/NI_3D Picture Control.lvlib"/>
-				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="NI_Math Plot Private Lib.lvlib" Type="Library" URL="/&lt;vilib&gt;/Math Plots/Plot Private Lib/NI_Math Plot Private Lib.lvlib"/>
-				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
-				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
-				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
-				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
-				<Item Name="LV3DPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LV3DPointTypeDef.ctl"/>
-				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
-				<Item Name="3D Surface.xctl" Type="XControl" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Surface/3D Surface XCtrl/3D Surface.xctl"/>
-				<Item Name="3D Surface.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Surface/3D Surface/3D Surface.lvclass"/>
-				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
-				<Item Name="3DMathPlot Action String.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Action String.ctl"/>
-				<Item Name="3DMathPlot Action String.vi" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Action String.vi"/>
-				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
+				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
+				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
+				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
+				<Item Name="Waveform Scale and Offset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Waveform Scale and Offset.vi"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>
+				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
+				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
+				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
+				<Item Name="Write File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write File+ (string).vi"/>
+				<Item Name="compatWriteText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatWriteText.vi"/>
+				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
+				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 			</Item>
 			<Item Name="libSPD.dll" Type="Document" URL="../Instruments/SPD HID Interface/hidSPDLibForLabView/hidSPD DLL files/libSPD.dll"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="SPD.Detect Error.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Detect Error.vi"/>
+			<Item Name="LeCroy Wave Series.lvlib" Type="Library" URL="../Instruments/LeCroy SDA830/Driver/lecroy_wave_series/LeCroy Wave Series/LeCroy Wave Series.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

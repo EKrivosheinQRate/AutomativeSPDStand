@@ -31,6 +31,7 @@
 		<Item Name="hidSPD Write Report.vi" Type="VI" URL="../LibVIs/hidSPD Write Report.vi"/>
 		<Item Name="hidSPD Read Report (poly).vi" Type="VI" URL="../LibVIs/hidSPD Read Report (poly).vi"/>
 		<Item Name="hidSPD Write Report (poly).vi" Type="VI" URL="../LibVIs/hidSPD Write Report (poly).vi"/>
+		<Item Name="hidSPD Parse SPDClient JSON.vi" Type="VI" URL="../LibVIs/hidSPD Parse SPDClient JSON.vi"/>
 	</Item>
 	<Item Name="typedefs" Type="Folder">
 		<Item Name="hidSPD Controller Setup Report.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Controller Setup Report.ctl"/>
@@ -38,6 +39,7 @@
 		<Item Name="hidSPD Device Session.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Device Session.ctl"/>
 		<Item Name="hidSPD HidDevInfo.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD HidDevInfo.ctl"/>
 		<Item Name="hidSPD Simple Report.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Simple Report.ctl"/>
+		<Item Name="hidSPD SPD Type.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD SPD Type.ctl"/>
 	</Item>
 	<Item Name="hidSPD List Devices.vi" Type="VI" URL="../LibVIs/hidSPD List Devices.vi"/>
 </Library>
