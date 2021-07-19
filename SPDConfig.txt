@@ -38,6 +38,7 @@ HV_Grid_FreqC_Gate_Time = 0,1
 HV_Grid_FreqC_Num_Of_Meas = 10
 HV_Grid_Pulse_Count_min = 30
 HV_Grid_Pulse_Count_max = 1000
+HV_Grid_Minimum_delta_V = 0,6
 HV_Grid_HV_bias_Number_Of_Intervals = 6
 
 [Test04_Measurments_DCR]
@@ -50,6 +51,7 @@ DCR_FreqC_Num_Of_Meas = 10
 QE_FreqC_Gate_Time = 0,1
 QE_FreqC_Num_Of_Meas = 10
 QE_ATT3 = 60
+TR_Start_Meas_index = 5
 TR_Scope_Recall_File = spd-jitter-setup--00002.lss
 TR_Histo_Size = 10000
 
@@ -61,3 +63,15 @@ AP_FreqC_Gate_Time = 0,1
 AP_FreqC_Num_Of_Meas = 10
 AP_Scope_Recall_File = spd-ap-setup-100khz--00000.lss
 AP_Histo_Size = 10000
+
+[Test07_Measurments_TR_bifurcation]
+TR_bif_FS = 156250
+TR_bif_TS = 2
+TR_bif_Att3 = 60
+TR_bif_P_set_meas = 5,6E-6
+TR_bif_P_set_phase_tune = 1E-6
+TR_bif_FreqC_Gate_Time = 0,1
+TR_bif_FreqC_Num_Of_Meas = 10
+TR_bif_Scope_Recall_File = spd-jitter-setup--00002.lss
+TR_bif_Histo_Size = 10000
+TR_bif_Start_Meas_index = 5

@@ -171,6 +171,7 @@
 					<Item Name="SPD.Config Read Test04 DCR.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test04 DCR.vi"/>
 					<Item Name="SPD.Config Read Test05 QE.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test05 QE.vi"/>
 					<Item Name="SPD.Config Read Test06 AP.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test06 AP.vi"/>
+					<Item Name="SPD.Config Read Test07 TR bifurcation.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test07 TR bifurcation.vi"/>
 				</Item>
 				<Item Name="SPD.Open Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Open Config File.vi"/>
 				<Item Name="SPD.Close Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Close Config File.vi"/>
@@ -202,6 +203,8 @@
 				<Item Name="SubVIs" Type="Folder">
 					<Item Name="SPD.Histo Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Histo Meas.vi"/>
 					<Item Name="SPD.Read Count Rate.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Read Count Rate.vi"/>
+					<Item Name="SPD.Overall Progress tracker.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Overall Progress tracker.vi"/>
+					<Item Name="SPD.Set Laser Power.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Set Laser Power.vi"/>
 				</Item>
 				<Item Name="AP" Type="Folder">
 					<Item Name="typedefs" Type="Folder">
@@ -215,7 +218,7 @@
 						<Item Name="SPD.QE Test Params.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/QE&amp;TR/typedefs/SPD.QE Test Params.ctl"/>
 					</Item>
 					<Item Name="SPD.QE&amp;TR Meas Const T.vi" Type="VI" URL="../SPD Stand/SPD Measurements/QE&amp;TR/SPD.QE&amp;TR Meas Const T.vi"/>
-					<Item Name="SPD.QE Tune Phese and Get Count Rate.vi" Type="VI" URL="../SPD Stand/SPD Measurements/QE&amp;TR/SPD.QE Tune Phese and Get Count Rate.vi"/>
+					<Item Name="SPD.QE Tune Phase and Get Count Rate.vi" Type="VI" URL="../SPD Stand/SPD Measurements/QE&amp;TR/SPD.QE Tune Phase and Get Count Rate.vi"/>
 					<Item Name="SPD.QE&amp;TR Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/QE&amp;TR/SPD.QE&amp;TR Meas.vi"/>
 				</Item>
 				<Item Name="DCR" Type="Folder">
@@ -234,8 +237,17 @@
 					<Item Name="SPD.HV_bias Range.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_bias Range.vi"/>
 					<Item Name="SPD.HV_Grid Initial Range Search Controller.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Grid Initial Range Search Controller.vi"/>
 					<Item Name="SPD.HV_Grid Min Search.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Grid Min Search.vi"/>
-					<Item Name="SPD.HV_Grid Check HV_bias Limits.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Grid Check HV_bias Limits.vi"/>
 					<Item Name="SPD.HV_Grid Max Search.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Grid Max Search.vi"/>
+					<Item Name="SPD.HV_Grid Check HV_bias Limits.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Grid Check HV_bias Limits.vi"/>
+					<Item Name="SPD.HV_Bias Build Grid.vi" Type="VI" URL="../SPD Stand/SPD Measurements/MeasGrid/SPD.HV_Bias Build Grid.vi"/>
+				</Item>
+				<Item Name="TR Bifurcation" Type="Folder">
+					<Item Name="typedefs" Type="Folder">
+						<Item Name="SPD.TR Test Params.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/TR Bifurcation/typedefs/SPD.TR Test Params.ctl"/>
+					</Item>
+					<Item Name="SubVIs" Type="Folder"/>
+					<Item Name="SPD.TR Bifurcation Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/TR Bifurcation/SPD.TR Bifurcation Meas.vi"/>
+					<Item Name="SPD.TR Bifurcation Meas Const T.vi" Type="VI" URL="../SPD Stand/SPD Measurements/TR Bifurcation/SPD.TR Bifurcation Meas Const T.vi"/>
 				</Item>
 				<Item Name="SPD.Measurments.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.Measurments.vi"/>
 				<Item Name="SPD.Measurments Error Handler.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.Measurments Error Handler.vi"/>
@@ -255,6 +267,7 @@
 		</Item>
 		<Item Name="SPD Test Launcher.vi" Type="VI" URL="../SPD Test Launcher.vi"/>
 		<Item Name="Scope AP Meas test.vi" Type="VI" URL="../Scope AP Meas test.vi"/>
+		<Item Name="8164 Pset test.vi" Type="VI" URL="../8164 Pset test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
