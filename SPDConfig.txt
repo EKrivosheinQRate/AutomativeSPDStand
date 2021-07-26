@@ -5,7 +5,7 @@ FreqC_GateTime = 1
 [Test01_HV_bias]
 FS = 100
 TS = 2
-HV_Bias_Quick_Start = 60
+HV_Bias_Quick_Start = 50
 HV_Bias_Quick_Stop = 80
 HV_Bias_Quick_Step = 0,5
 FreqC_Quick_GateTime = 0,5
