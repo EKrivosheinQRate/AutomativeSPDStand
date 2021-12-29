@@ -70,7 +70,6 @@
 					<Item Name="FreqC.Self-test.vi" Type="VI" URL="../Instruments/KeySight 53230A/KeySight 53230A API/FreqC.Self-test.vi"/>
 				</Item>
 				<Item Name="KeySight 53230A VISA Test.vi" Type="VI" URL="../Instruments/KeySight 53230A/KeySight 53230A VISA Test.vi"/>
-				<Item Name="Agilent 532XX Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Agilent 532XX Series/Agilent 532XX Series.lvlib"/>
 			</Item>
 			<Item Name="SPD HID Interface" Type="Folder">
 				<Item Name="hidSPDLibForLabView.lvlib" Type="Library" URL="../Instruments/SPD HID Interface/hidSPDLibForLabView/hidSPDLibForLabView.lvlib"/>
@@ -122,12 +121,15 @@
 				<Item Name="SPD.Set HV_Bias and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Set HV_Bias and Wait For Ready.vi"/>
 				<Item Name="SPD.Wait For SPD Ready.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Wait For SPD Ready.vi"/>
 				<Item Name="Wait.vi" Type="VI" URL="../SPD Stand/SubVIs/Wait.vi"/>
+				<Item Name="Enable Controls.vi" Type="VI" URL="../SPD Stand/SubVIs/Enable Controls.vi"/>
+				<Item Name="SPD.Set DT&amp;Insens and Wait For Ready.vi" Type="VI" URL="../SPD Stand/SubVIs/SPD.Set DT&amp;Insens and Wait For Ready.vi"/>
+				<Item Name="Get DBL Array from Str.vi" Type="VI" URL="../SPD Stand/SubVIs/Get DBL Array from Str.vi"/>
 			</Item>
 			<Item Name="typedefs" Type="Folder">
 				<Item Name="SPD.Stand Ctrl.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Ctrl.ctl"/>
 				<Item Name="SPD.Stand Tabs.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand Tabs.ctl"/>
 				<Item Name="SPD.Events.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Events.ctl"/>
-				<Item Name="SPD.Meas Result.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Meas Result.ctl"/>
+				<Item Name="SPD.Meas Grid.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Meas Grid.ctl"/>
 				<Item Name="SPD.Stand state.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Stand state.ctl"/>
 				<Item Name="SPD.Queues.ctl" Type="VI" URL="../SPD Stand/typedefs/SPD.Queues.ctl"/>
 			</Item>
@@ -172,6 +174,8 @@
 					<Item Name="SPD.Config Read Test05 QE.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test05 QE.vi"/>
 					<Item Name="SPD.Config Read Test06 AP.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test06 AP.vi"/>
 					<Item Name="SPD.Config Read Test07 TR bifurcation.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test07 TR bifurcation.vi"/>
+					<Item Name="SPD.Config Read Test08 QEvsPow.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test08 QEvsPow.vi"/>
+					<Item Name="SPD.Config Read Test03a DTvsInsens.vi" Type="VI" URL="../SPD Stand/ConfigFile/ReadConfig/SPD.Config Read Test03a DTvsInsens.vi"/>
 				</Item>
 				<Item Name="SPD.Open Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Open Config File.vi"/>
 				<Item Name="SPD.Close Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Close Config File.vi"/>
@@ -179,16 +183,23 @@
 				<Item Name="SPD.Update Config File.vi" Type="VI" URL="../SPD Stand/ConfigFile/SPD.Update Config File.vi"/>
 			</Item>
 			<Item Name="ResultsFiles" Type="Folder">
+				<Item Name="SPD.Set Meas Date_Time.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Set Meas Date_Time.vi"/>
 				<Item Name="SPD.SaveGrid.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.SaveGrid.vi"/>
 				<Item Name="SPD.Get Results Folder.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Get Results Folder.vi"/>
 				<Item Name="SPD.Save1DArray.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save1DArray.vi"/>
 				<Item Name="SPD.Save2DArray.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save2DArray.vi"/>
 				<Item Name="SPD.SaveDCR.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.SaveDCR.vi"/>
 				<Item Name="SPD.Save Measurments Result.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save Measurments Result.vi"/>
-				<Item Name="SPD.SaveAP Histo.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.SaveAP Histo.vi"/>
+				<Item Name="SPD.Save Histo.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save Histo.vi"/>
 				<Item Name="SPD.Get AP&amp;TR Histo Folder.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Get AP&amp;TR Histo Folder.vi"/>
-				<Item Name="SPD.SaveTR Histo.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.SaveTR Histo.vi"/>
 				<Item Name="SPD.Save Grid T and Stb.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save Grid T and Stb.vi"/>
+				<Item Name="SPD.SaveQEvsPow Result.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.SaveQEvsPow Result.vi"/>
+				<Item Name="SPD.SaveQEvsPow Pow_Grid.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.SaveQEvsPow Pow_Grid.vi"/>
+				<Item Name="SPD.Get DT Histo File.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Get DT Histo File.vi"/>
+				<Item Name="SPD.Get DT&amp;Insense Results Folder.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Get DT&amp;Insense Results Folder.vi"/>
+				<Item Name="SPD.Save DT Result.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save DT Result.vi"/>
+				<Item Name="SPD.Get Insens Histo File.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Get Insens Histo File.vi"/>
+				<Item Name="SPD.Save Insens Result.vi" Type="VI" URL="../SPD Stand/ResultsFiles/SPD.Save Insens Result.vi"/>
 			</Item>
 			<Item Name="Logger" Type="Folder">
 				<Item Name="SPD.Logg Error.vi" Type="VI" URL="../SPD Stand/Logger/SPD.Logg Error.vi"/>
@@ -199,12 +210,16 @@
 					<Item Name="SPD.Grid Meas Setup.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/typedefs/SPD.Grid Meas Setup.ctl"/>
 					<Item Name="SPD.Test Range.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/typedefs/SPD.Test Range.ctl"/>
 					<Item Name="SPD.QE Strobe_Phase Tune Limits.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/typedefs/SPD.QE Strobe_Phase Tune Limits.ctl"/>
+					<Item Name="SPD.Common HW Setup ctr.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/typedefs/SPD.Common HW Setup ctr.ctl"/>
 				</Item>
 				<Item Name="SubVIs" Type="Folder">
+					<Item Name="SPD.Common HW Setup.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Common HW Setup.vi"/>
 					<Item Name="SPD.Histo Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Histo Meas.vi"/>
 					<Item Name="SPD.Read Count Rate.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Read Count Rate.vi"/>
 					<Item Name="SPD.Overall Progress tracker.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Overall Progress tracker.vi"/>
 					<Item Name="SPD.Set Laser Power.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Set Laser Power.vi"/>
+					<Item Name="MiliSec to Time string.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/MiliSec to Time string.vi"/>
+					<Item Name="SPD.Get Meas pass and report.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SubVIs/SPD.Get Meas pass and report.vi"/>
 				</Item>
 				<Item Name="AP" Type="Folder">
 					<Item Name="typedefs" Type="Folder">
@@ -249,10 +264,33 @@
 					<Item Name="SPD.TR Bifurcation Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/TR Bifurcation/SPD.TR Bifurcation Meas.vi"/>
 					<Item Name="SPD.TR Bifurcation Meas Const T.vi" Type="VI" URL="../SPD Stand/SPD Measurements/TR Bifurcation/SPD.TR Bifurcation Meas Const T.vi"/>
 				</Item>
+				<Item Name="QEvsPower" Type="Folder">
+					<Item Name="typedefs" Type="Folder">
+						<Item Name="SPD.QEvsPower Test Params.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/QEvsPower/typedefs/SPD.QEvsPower Test Params.ctl"/>
+					</Item>
+					<Item Name="SPD.QEvsPow Meas Const T.vi" Type="VI" URL="../SPD Stand/SPD Measurements/QEvsPower/SPD.QEvsPow Meas Const T.vi"/>
+					<Item Name="SPD.QEvsPow Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/QEvsPower/SPD.QEvsPow Meas.vi"/>
+				</Item>
+				<Item Name="DeadTime &amp; Insensitivity" Type="Folder">
+					<Item Name="typedefs" Type="Folder">
+						<Item Name="SPD.DT&amp;Insens Test Params.ctl" Type="VI" URL="../SPD Stand/SPD Measurements/DT&amp;Insensitivity/typedefs/SPD.DT&amp;Insens Test Params.ctl"/>
+					</Item>
+					<Item Name="subVIs" Type="Folder">
+						<Item Name="_Python_Get_DT_and_AP_from_Histo.vi" Type="VI" URL="../Python/_Python_Get_DT_and_AP_from_Histo.vi"/>
+						<Item Name="SPD.DT Interpolate and Get.vi" Type="VI" URL="../SPD Stand/SPD Measurements/DT&amp;Insensitivity/subVIs/SPD.DT Interpolate and Get.vi"/>
+						<Item Name="SPD.Insens Get.vi" Type="VI" URL="../SPD Stand/SPD Measurements/DT&amp;Insensitivity/subVIs/SPD.Insens Get.vi"/>
+					</Item>
+					<Item Name="SPD.DT Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/DT&amp;Insensitivity/SPD.DT Meas.vi"/>
+					<Item Name="SPD.DT Meas DT_Grid.vi" Type="VI" URL="../SPD Stand/SPD Measurements/DT&amp;Insensitivity/SPD.DT Meas DT_Grid.vi"/>
+					<Item Name="SPD.Insens Meas.vi" Type="VI" URL="../SPD Stand/SPD Measurements/DT&amp;Insensitivity/SPD.Insens Meas.vi"/>
+					<Item Name="SPD.Insens Meas Insens_Grid.vi" Type="VI" URL="../SPD Stand/SPD Measurements/DT&amp;Insensitivity/SPD.Insens Meas Insens_Grid.vi"/>
+				</Item>
 				<Item Name="SPD.Measurments.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.Measurments.vi"/>
 				<Item Name="SPD.Measurments Error Handler.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.Measurments Error Handler.vi"/>
 				<Item Name="SPD.Set Meas Grid.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.Set Meas Grid.vi"/>
 				<Item Name="SPD.HV_Grid Calc Measurment Time.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.HV_Grid Calc Measurment Time.vi"/>
+				<Item Name="SPD.Measurments Single Point.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.Measurments Single Point.vi"/>
+				<Item Name="SPD.Set Single Point Meas Grid.vi" Type="VI" URL="../SPD Stand/SPD Measurements/SPD.Set Single Point Meas Grid.vi"/>
 			</Item>
 			<Item Name="Control Flow" Type="Folder">
 				<Item Name="SPD.Obtain Queues.vi" Type="VI" URL="../SPD Stand/Control flow/SPD.Obtain Queues.vi"/>
@@ -262,12 +300,15 @@
 				<Item Name="Obtain Events.vi" Type="VI" URL="../SPD Stand/Control flow/Obtain Events.vi"/>
 				<Item Name="Destroy Events.vi" Type="VI" URL="../SPD Stand/Control flow/Destroy Events.vi"/>
 			</Item>
+			<Item Name="SPD.Update SPD Type.vi" Type="VI" URL="../SPD Stand/SPD.Update SPD Type.vi"/>
+			<Item Name="SPD.Update Meas Grid control.vi" Type="VI" URL="../SPD Stand/SPD.Update Meas Grid control.vi"/>
 			<Item Name="SPD.Check HW status.vi" Type="VI" URL="../SPD Stand/SPD.Check HW status.vi"/>
 			<Item Name="SPD.Disconnect HW.vi" Type="VI" URL="../SPD Stand/SPD.Disconnect HW.vi"/>
 		</Item>
 		<Item Name="SPD Test Launcher.vi" Type="VI" URL="../SPD Test Launcher.vi"/>
+		<Item Name="SPD Single Point Test Launcher.vi" Type="VI" URL="../SPD Single Point Test Launcher.vi"/>
 		<Item Name="Scope AP Meas test.vi" Type="VI" URL="../Scope AP Meas test.vi"/>
-		<Item Name="8164 Pset test.vi" Type="VI" URL="../8164 Pset test.vi"/>
+		<Item Name="Interpolation Test.vi" Type="VI" URL="../Interpolation Test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -278,8 +319,6 @@
 				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
 				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
-				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
@@ -304,6 +343,13 @@
 				<Item Name="compatWriteText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatWriteText.vi"/>
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
+				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
+				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
+				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+			</Item>
+			<Item Name="instr.lib" Type="Folder">
+				<Item Name="Agilent 532XX Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Agilent 532XX Series/Agilent 532XX Series.lvlib"/>
 			</Item>
 			<Item Name="libSPD.dll" Type="Document" URL="../Instruments/SPD HID Interface/hidSPDLibForLabView/hidSPD DLL files/libSPD.dll"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>

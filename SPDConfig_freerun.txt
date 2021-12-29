@@ -40,6 +40,7 @@ HV_Grid_Pulse_Count_min = 30
 HV_Grid_Pulse_Count_max = 1000
 HV_Grid_Minimum_delta_V = 0,6
 HV_Grid_HV_bias_Number_Of_Intervals = 20
+HV_Grid_Pset = 3,6E-9
 
 [Test04_Measurments_DCR]
 DCR_FS = 100
@@ -51,8 +52,9 @@ DCR_FreqC_Num_Of_Meas = 30
 QE_FreqC_Gate_Time = 0,1
 QE_FreqC_Num_Of_Meas = 30
 QE_ATT3 = 60
+QE_Pset = 3,6E-9
 TR_Start_Meas_index = 5
-TR_Scope_Recall_File = spd-jitter-setup_freerun--00001.lss
+TR_Scope_Recall_File = spd-jitter-setup_freerun--00000.lss
 TR_Histo_Size = 20000
 
 [Test06_Measurments_AP]

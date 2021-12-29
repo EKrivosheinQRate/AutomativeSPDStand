@@ -21,9 +21,11 @@
 		<Item Name="hidSPD Read Report" Type="Folder">
 			<Item Name="hidSPD Read Telemetry.vi" Type="VI" URL="../LibVIs/hidSPD Read Report/hidSPD Read Telemetry.vi"/>
 			<Item Name="hidSPD Read SPD Name.vi" Type="VI" URL="../LibVIs/hidSPD Read Report/hidSPD Read SPD Name.vi"/>
+			<Item Name="hidSPD Read Signal Board.vi" Type="VI" URL="../LibVIs/hidSPD Read Report/hidSPD Read Signal Board.vi"/>
 		</Item>
 		<Item Name="hidSPD Write Report" Type="Folder">
 			<Item Name="hidSPD Setup Controller.vi" Type="VI" URL="../LibVIs/hidSPD Write Report/hidSPD Setup Controller.vi"/>
+			<Item Name="hidSPD Setup Signal Board.vi" Type="VI" URL="../LibVIs/hidSPD Write Report/hidSPD Setup Signal Board.vi"/>
 		</Item>
 		<Item Name="hidSPD Close Session.vi" Type="VI" URL="../LibVIs/hidSPD Close Session.vi"/>
 		<Item Name="hidSPD Open Session.vi" Type="VI" URL="../LibVIs/hidSPD Open Session.vi"/>
@@ -35,11 +37,15 @@
 	</Item>
 	<Item Name="typedefs" Type="Folder">
 		<Item Name="hidSPD Controller Setup Report.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Controller Setup Report.ctl"/>
+		<Item Name="hidSPD Controller Signal Report.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Controller Signal Report.ctl"/>
 		<Item Name="hidSPD Controller.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Controller.ctl"/>
 		<Item Name="hidSPD Device Session.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Device Session.ctl"/>
 		<Item Name="hidSPD HidDevInfo.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD HidDevInfo.ctl"/>
 		<Item Name="hidSPD Simple Report.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD Simple Report.ctl"/>
+		<Item Name="hidSPD SPD Diod Case.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD SPD Diod Case.ctl"/>
 		<Item Name="hidSPD SPD Type.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD SPD Type.ctl"/>
+		<Item Name="hidSPD.SPD specification.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD.SPD specification.ctl"/>
+		<Item Name="hidSPD.STB Frequency.ctl" Type="VI" URL="../LibVIs/hidSPD Controls/hidSPD.STB Frequency.ctl"/>
 	</Item>
 	<Item Name="hidSPD List Devices.vi" Type="VI" URL="../LibVIs/hidSPD List Devices.vi"/>
 </Library>
